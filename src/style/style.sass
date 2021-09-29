@@ -1,0 +1,26 @@
+@import 'normalize';
+@import 'colors'
+@import 'navigation'
+@import 'header'
+@import 'section'
+
+*
+  box-sizing: border-box 
+  text-rendering: optimizeLegibility
+
+html
+  font-size: calc(100vw / 1920)
+
+body
+  background: $color-mirage
+  // overflow-y: hidden
+  scroll-behavior: smooth
+
+.container 
+  width: 960rem
+  margin: 0 auto   
+
+
+@media (max-width: 375px)
+  html
+    // font-size: calc(100vw / 375)

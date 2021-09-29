@@ -1,0 +1,224 @@
+@import 'colors'
+
+.section
+  display: flex
+  position: relative
+  width: 100%
+  margin-top: 32rem
+  justify-content: space-between
+  &-bg
+    position: absolute  
+    z-index: -1
+
+  &-btn
+      position: absolute
+      right: 48rem
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 26rem
+      height: 26rem
+      cursor: pointer
+  &-left
+    margin-top: 40rem
+    width: 132rem
+  &-right 
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding: 48rem
+    width: 781rem 
+    background: linear-gradient(0deg, rgba(30, 36, 44, 0.4), rgba(30, 36, 44, 0.4)), linear-gradient(180deg, #171D25 0%, rgba(65, 68, 71, 0) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 3px 19px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(13px) 
+    border-radius: 32rem
+    border: 2rem solid rgba(255, 255, 255 ,0.2) 
+ 
+    &-title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 28rem
+      line-height: 33rem
+      color: $color-white
+    p
+      font-family: Roboto Mono
+      font-style: normal
+      font-weight: 500
+      font-size: 16rem
+      line-height: 130%
+      color: $color-bombay
+    ul
+      li
+        font-family: Roboto Mono
+        font-style: normal
+        font-weight: 500
+        font-size: 16rem
+        line-height: 130%
+        color: $color-bombay
+    &-signal
+      position: absolute
+      left: -2rem
+      height: calc(100% - 48rem * 2)
+      width: 4rem
+      border-radius: 4rem
+
+
+  .stats
+    display: flex
+    flex-direction: column
+    &-items
+      display: flex
+      align-items: center
+      width: 132rem
+      margin: 6rem 0
+    &-img
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 48rem
+      height: 48rem
+      left: 423rem
+      top: 306rem
+
+      background: linear-gradient(135deg, #1D232B 0%, #21272F 100%)
+      box-shadow: -4rem 4rem 8rem  rgba(12, 15, 18, 0.2), 4rem -4rem 8rem rgba(12, 15, 18, 0.2), -4rem -4rem 8rem rgba(50, 59, 72, 0.9), 4rem 4rem 10rem rgba(12, 15, 18, 0.9), inset 1rem 1rem 2rem rgba(50, 59, 72, 0.3), inset -1rem -1rem 2rem rgba(12, 15, 18, 0.5)
+      border-radius: 12rem
+    &-text
+      display: flex
+      margin-left: 12rem
+      flex-direction: column
+      justify-content: center
+      color: $color-white
+      font-family: Roboto Mono
+      font-style: normal
+      span:first-of-type
+        font-weight: bold
+        font-size: 18rem
+        line-height: 100% 
+        display: flex
+        align-items: flex-end
+        margin-bottom: 4rem
+      span:last-of-type
+        font-size: 12rem
+        line-height: 100%
+        color: $color-bombay
+    &-block
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+    &-icon
+    &-title
+      font-family: Roboto Mono
+      font-style: normal
+      font-weight: bold
+      font-size: 24rem
+      line-height: 32rem
+      text-align: right
+      text-transform: uppercase
+      color: $color-white
+      margin-top: 12rem
+  
+  .ordered-list
+    width: 392rem
+    &-item
+      display: flex
+      align-items: center 
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 18rem
+      line-height: 130%
+      color: $color-white
+      margin-bottom: 6rem
+      &-num
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 48rem
+        height: 48rem 
+        font-size: 24rem
+        line-height: 100%
+        background: radial-gradient(50% 50% at 50% 50%, $color-screamin-green 0%, #00B012 100%), #4392F1;
+        border-radius: 24rem 12rem 12rem 24rem
+      &-text
+        margin-left: 12rem
+        width: 332rem
+  .calendar
+    width: 392rem
+    &-item
+      display: flex
+      justify-content: space-between
+      margin-bottom: 12rem
+      &-num
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 24rem
+        line-height: 100%
+        color: $color-white
+      &-text
+        font-family: Roboto Mono
+        font-style: normal
+        font-weight: 500
+        font-size: 18rem
+        line-height: 130%
+        color: $color-bombay
+
+  table
+    width: 100% 
+    th
+      text-align: left
+      font-family: Roboto Mono
+      font-style: normal
+      font-weight: 500
+      font-size: 18rem
+      line-height: 100%   
+      color: $color-bombay  
+    tr
+      height: 48rem
+      td:first-of-type
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 24rem
+        line-height: 100% 
+        color: $color-white
+      td:nth-of-type(2)
+        font-family: Roboto Mono
+        font-style: normal
+        font-weight: normal
+        font-size: 18rem
+        line-height: 130%
+        color: $color-bombay
+      td:nth-of-type(3)
+        font-family: Roboto Mono
+        font-style: normal
+        font-weight: bold
+        font-size: 18rem
+        line-height: 130% 
+        color: $color-orange-peel
+
+  .social 
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: $color-white
+    text-decoration: none
+    font-family: Roboto Mono
+    font-style: normal
+    font-weight: 500
+    font-size: 18rem
+    line-height: 130% 
+    text-align: center
+    width: 78rem
+    margin: 0 50rem
+    &-block
+      display: flex
+      width: 100%
+      justify-content: center
+    &-img
+      width: 78rem
+      height: 78rem
+
+      

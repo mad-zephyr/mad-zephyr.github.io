@@ -1,0 +1,73 @@
+@import 'colors' 
+
+.nav
+  position: fixed
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  top: 0
+  left: 0
+  width: 72rem
+  height: 100%
+  border-radius: 0px 30rem 30rem0px; 
+  background: $color-pickled-bluewood
+  overflow: hidden
+  z-index: 100
+  &-container
+    z-index: 2
+  &-btn
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    cursor: pointer
+    width: 58rem
+    height: 60rem
+    &:hover
+      .nav-btn-checkbox-icon 
+        fill: $color-screamin-green
+    input
+      transform: scale(0)
+      // opacity: 0
+      position: absolute
+      &:checked
+        transform: scale(0)
+      &:checked ~ svg path
+        fill: $color-orange-peel 
+      &:checked +.switch 
+          left: 0px
+    svg path 
+      fill: $color-white
+      transition: 0.3s all
+    .switch
+      position: absolute
+      pointer-events: none
+      top: 0
+      left: 66rem
+      background: $color-mirage
+      width: 70rem
+      height: 60rem
+      border-radius: 24rem 0 0 24rem
+      z-index: -1
+      transition: 0.3s ease
+      &::before
+        content: ""
+        position: absolute
+        top: -22rem
+        right: -3rem
+        width: 30rem
+        height: 30rem
+        box-shadow: inset -8rem -8rem 0rem #141B23
+        border-radius: 0px 0px 23rem 0px
+      &::after
+        content: ""
+        position: absolute
+        bottom: -22rem
+        right: -3rem
+        width: 30rem
+        height: 30rem
+        box-shadow: inset -8rem 8rem 0px #141B23
+        border-radius: 0px 23rem 0px 0px
+      
+    
