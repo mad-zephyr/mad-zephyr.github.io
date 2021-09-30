@@ -7,7 +7,7 @@
 *
   box-sizing: border-box 
   text-rendering: optimizeLegibility
-
+ 
 html
   font-size: calc(100vw / 1920)
 
@@ -21,6 +21,13 @@ body
   margin: 0 auto   
 
 
-@media (max-width: 375px)
+@media (max-width: 414px)
   html
-    // font-size: calc(100vw / 375)
+    font-size: calc(100vw / 414) 
+
+  .container 
+    width: calc(100vw - 24rem)
+    margin: 0 auto  
+    // overflow: hidden
+
+

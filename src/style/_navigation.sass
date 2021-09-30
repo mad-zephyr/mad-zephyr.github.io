@@ -1,20 +1,63 @@
 @import 'colors' 
 
 .nav
+  position: relative
   position: fixed
   display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
   top: 0
   left: 0
-  width: 72rem
-  height: 100%
-  border-radius: 0px 30rem 30rem0px; 
-  background: $color-pickled-bluewood
-  overflow: hidden
-  z-index: 100
+  bottom: 0
+  &-burger 
+    
+    &-label 
+      display: flex
+      flex-direction: column 
+      height: 48rem
+      width: 48rem
+      margin-top: 48rem
+      position: absolute
+      right: -60rem
+      cursor: pointer
+      input
+        transform: scale(0) 
+        position: absolute
+        &:checked + .nav-burger-line
+          background: $color-orange-peel 
+
+      &:hover
+        .nav-burger-line
+          background: $color-orange-peel
+          &:nth-of-type(1)
+            width: calc(100% )
+          &:nth-of-type(2)
+            width: calc(100% - 24rem)
+          &:nth-of-type(3)
+            width: calc(100% - 10rem)
+        
+    &-line
+      width: 100%
+      height: 4rem
+      margin-bottom: 8rem
+      border-radius: 2rem
+      background: $color-bombay
+      transition: 0.3s all ease
+    &-line:nth-of-type(1)
+      width: calc(100% - 10rem)
+    &-line:nth-of-type(3)
+      width: calc(100% - 24rem)
+
   &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    width: 72rem
+    height: 100vh
+    border-radius: 0px 30rem 30rem 0px; 
+    background: $color-pickled-bluewood
+    overflow-y: hidden
+    z-index: 100
     z-index: 2
   &-btn
     display: flex
@@ -70,4 +113,8 @@
         box-shadow: inset -8rem 8rem 0px #141B23
         border-radius: 0px 23rem 0px 0px
       
+@media (max-width: 414px)
+  .nav
+    transform: translateX(-100%)
+
     
