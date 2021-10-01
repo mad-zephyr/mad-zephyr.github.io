@@ -1,34 +1,54 @@
 @import 'colors' 
+@import 'text'
 
 .nav
   position: relative
   position: fixed
   display: flex
+  flex-direction: row-reverse
   top: 0
   left: 0
   bottom: 0
+  z-index: 99
+  transition: 0.3s all ease
+  &-wrapper
+    position: absolute
+    background: rgba(0, 0, 0, .5)
+    left: 0
+    transform: translateX(0)
+    width: 200vw
+    height: 100vh
+    z-index: -1
+    opacity: 0
+    backdrop-filter: blur(0px)
+    transition: 0.3s all ease
+    pointer-events: none
   &-burger 
-    
+    outline: none
     &-label 
-      display: flex
-      flex-direction: column 
-      height: 48rem
+      // margin-top: 48rem
+      margin: 48rem 0 0 24rem
       width: 48rem
-      margin-top: 48rem
-      position: absolute
-      right: -60rem
+      height: 48rem
       cursor: pointer
-      input
-        transform: scale(0) 
-        position: absolute
-        &:checked + .nav-burger-line
-          background: $color-orange-peel 
-
+      outline: none
+    &-checkbox
+      transform: scale(0)
+      position: absolute 
+      &:checked ~ .nav-burger-line
+        background: $color-orange-peel
+        &:nth-of-type(1)
+          width: calc(100% )
+        &:nth-of-type(2)
+          width: calc(100% - 24rem)
+        &:nth-of-type(3)
+          width: calc(100% - 10rem)
+ 
       &:hover
         .nav-burger-line
-          background: $color-orange-peel
+          background: $color-screamin-green
           &:nth-of-type(1)
-            width: calc(100% )
+            width: 100%
           &:nth-of-type(2)
             width: calc(100% - 24rem)
           &:nth-of-type(3)
@@ -49,51 +69,91 @@
   &-container
     display: flex
     flex-direction: column
-    align-items: center
-    justify-content: center
-
+    align-items: flex-start
+    justify-content: center 
     width: 72rem
-    height: 100vh
-    border-radius: 0px 30rem 30rem 0px; 
-    background: $color-pickled-bluewood
-    overflow-y: hidden
+    height: 100%
+    border-radius: 0px 30rem 30rem 0px
+    background: $color-pickled-bluewood 
     z-index: 100
-    z-index: 2
+    transition: 0.3s all ease
+    overflow: hidden
+    &-open
+      width: 200rem
   &-btn
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: flex-start
     position: relative
-    cursor: pointer
-    width: 58rem
+    cursor: pointer 
+    width: 100%
     height: 60rem
+    margin-left: 7rem
+    font-size: 0px 
+    outline: none
+    span 
+      font-size: 0rem
+      color: $color-white
+      outline: none
+      transition: 0.3s all ease    
+
     &:hover
+      span
+        color: $color-screamin-green !important
       .nav-btn-checkbox-icon 
         fill: $color-screamin-green
     input
-      transform: scale(0)
-      // opacity: 0
-      position: absolute
-      &:checked
-        transform: scale(0)
+      transform: scale(0) 
+      position: absolute 
+      outline: none
       &:checked ~ svg path
         fill: $color-orange-peel 
-      &:checked +.switch 
-          left: 0px
-    svg path 
-      fill: $color-white
-      transition: 0.3s all
+      &:checked ~ span 
+        color: $color-orange-peel
+        
+      &:checked + .switch 
+        right: 0px
+        width: 100%
+        &::before
+          content: ""
+          position: absolute
+          top: -22rem
+          right: -1rem
+          width: 30rem
+          height: 30rem
+          box-shadow: inset -8rem -8rem 0rem #141B23
+          border-radius: 0px 0px 23rem 0px
+        &::after
+          content: ""
+          position: absolute
+          bottom: -22rem
+          right: -1rem
+          width: 30rem
+          height: 30rem
+          box-shadow: inset -8rem 8rem 0px #141B23
+          border-radius: 0px 23rem 0px 0px
+ 
+    svg 
+      margin-left: 
+      margin: 0 20rem
+      path 
+        fill: $color-white
+        transition: 0.3s all
+
+
     .switch
       position: absolute
       pointer-events: none
       top: 0
-      left: 66rem
+      right: -20rem 
       background: $color-mirage
-      width: 70rem
+      width: 0% 
       height: 60rem
       border-radius: 24rem 0 0 24rem
       z-index: -1
       transition: 0.3s ease
+      outline: none
+      box-shadow: inset 5rem 0px 21rem 5rem rgba(0, 0, 0, 0.45)
       &::before
         content: ""
         position: absolute
@@ -102,7 +162,9 @@
         width: 30rem
         height: 30rem
         box-shadow: inset -8rem -8rem 0rem #141B23
-        border-radius: 0px 0px 23rem 0px
+        border-radius: 0px 0px 23rem 0px 
+        transition: 0.2s ease
+
       &::after
         content: ""
         position: absolute
@@ -111,10 +173,24 @@
         width: 30rem
         height: 30rem
         box-shadow: inset -8rem 8rem 0px #141B23
-        border-radius: 0px 23rem 0px 0px
+        border-radius: 0px 23rem 0px 0px 
+        transition: 0.2s ease
       
 @media (max-width: 414px)
   .nav
-    transform: translateX(-100%)
+    // transform: translateX(-72rem)
+    left: -72rem
+    // overflow: hidden
+    z-index: 100 
+    &-wrapper
+      backdrop-filter: blur(10px)
+    &-container
+      overflow: hidden
+      &-open
+        left: 0rem
+        width: 200rem
+    &-burger
+      &-label
+        right: 
 
     
