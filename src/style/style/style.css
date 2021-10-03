@@ -1520,12 +1520,6 @@ template, [hidden] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section-right-signal::after {
-    content: "";
-    width: 200%;
-    height: 90%;
-    background: white;
-  }
   .section .ordered-list {
     width: auto;
     width: 100%;
