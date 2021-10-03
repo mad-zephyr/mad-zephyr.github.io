@@ -14,7 +14,8 @@ btn.addEventListener('click', function(e){
         navBtnLabel.forEach(elem => {  
             elem.style.cssText = ' font-family: Roboto; font-style: normal; font-weight: bold; font-size: 16rem; line-height: 24rem; opacity: 1'
         })
-        this.parentElement.nextElementSibling.nextElementSibling.style.cssText = ' opacity: 1; backdrop-filter: blur(10px); pointer-events: auto'  
+        this.parentElement.nextElementSibling.nextElementSibling.style.cssText = ' opacity: 1; backdrop-filter: blur(10px); pointer-events: auto' 
+        document.body.style.overflow = 'hidden'
 
     } else {
         nav.style.left = '' 
@@ -23,6 +24,8 @@ btn.addEventListener('click', function(e){
         })
         this.parentElement.nextElementSibling.nextElementSibling.style.cssText = '' 
         menu.classList.remove('nav-container-open')
+
+        document.body.style.overflow = ''
     }
 
 })

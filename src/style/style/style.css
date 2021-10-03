@@ -284,23 +284,50 @@ template, [hidden] {
 
 /**
  * Add the correct display in IE 10. */
+.svg-ornge {
+  fill: #FF9B00;
+}
+
 .orange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF9B00;
   -webkit-box-shadow: 0px 0px 4px #FF9B00;
           box-shadow: 0px 0px 4px #FF9B00;
 }
 
-.svg-ornge {
-  fill: #FF9B00;
-}
-
 .green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #71FB7E;
   -webkit-box-shadow: 0px 0px 4px #71FB7E;
           box-shadow: 0px 0px 4px #71FB7E;
 }
 
 .rose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF005C;
   -webkit-box-shadow: 0px 0px 4px #FF005C;
           box-shadow: 0px 0px 4px #FF005C;
@@ -312,23 +339,50 @@ template, [hidden] {
           box-shadow: 0px 0px 4px #0074FF;
 }
 
+.svg-ornge {
+  fill: #FF9B00;
+}
+
 .orange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF9B00;
   -webkit-box-shadow: 0px 0px 4px #FF9B00;
           box-shadow: 0px 0px 4px #FF9B00;
 }
 
-.svg-ornge {
-  fill: #FF9B00;
-}
-
 .green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #71FB7E;
   -webkit-box-shadow: 0px 0px 4px #71FB7E;
           box-shadow: 0px 0px 4px #71FB7E;
 }
 
 .rose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF005C;
   -webkit-box-shadow: 0px 0px 4px #FF005C;
           box-shadow: 0px 0px 4px #FF005C;
@@ -573,8 +627,6 @@ template, [hidden] {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   outline: none;
-  -webkit-box-shadow: inset 5rem 0px 21rem 5rem rgba(0, 0, 0, 0.45);
-          box-shadow: inset 5rem 0px 21rem 5rem rgba(0, 0, 0, 0.45);
 }
 
 .nav-btn .switch::before {
@@ -584,8 +636,6 @@ template, [hidden] {
   right: -3rem;
   width: 30rem;
   height: 30rem;
-  -webkit-box-shadow: inset -8rem -8rem 0rem #141B23;
-          box-shadow: inset -8rem -8rem 0rem #141B23;
   border-radius: 0px 0px 23rem 0px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -623,23 +673,50 @@ template, [hidden] {
   }
 }
 
+.svg-ornge {
+  fill: #FF9B00;
+}
+
 .orange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF9B00;
   -webkit-box-shadow: 0px 0px 4px #FF9B00;
           box-shadow: 0px 0px 4px #FF9B00;
 }
 
-.svg-ornge {
-  fill: #FF9B00;
-}
-
 .green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #71FB7E;
   -webkit-box-shadow: 0px 0px 4px #71FB7E;
           box-shadow: 0px 0px 4px #71FB7E;
 }
 
 .rose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF005C;
   -webkit-box-shadow: 0px 0px 4px #FF005C;
           box-shadow: 0px 0px 4px #FF005C;
@@ -796,6 +873,14 @@ template, [hidden] {
           align-items: flex-end;
   text-align: center;
   margin: 7rem 4.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.header-right .hashtag-items:hover {
+  color: #FFD600;
+  text-shadow: 0px 0px 4px #FF9B00;
 }
 
 @media (max-width: 414px) {
@@ -851,32 +936,58 @@ template, [hidden] {
     text-align: center;
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
     margin: 6rem 0 6rem 12rem;
   }
-}
-
-.orange {
-  background: #FF9B00;
-  -webkit-box-shadow: 0px 0px 4px #FF9B00;
-          box-shadow: 0px 0px 4px #FF9B00;
 }
 
 .svg-ornge {
   fill: #FF9B00;
 }
 
+.orange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF9B00;
+  -webkit-box-shadow: 0px 0px 4px #FF9B00;
+          box-shadow: 0px 0px 4px #FF9B00;
+}
+
 .green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #71FB7E;
   -webkit-box-shadow: 0px 0px 4px #71FB7E;
           box-shadow: 0px 0px 4px #71FB7E;
 }
 
 .rose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FF005C;
   -webkit-box-shadow: 0px 0px 4px #FF005C;
           box-shadow: 0px 0px 4px #FF005C;
@@ -999,11 +1110,10 @@ template, [hidden] {
 .section-right ul li {
   font-family: Roboto Mono;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16rem;
   line-height: 24rem;
   margin: 0;
-  margin-bottom: 12rem;
   color: #B5B5B6;
 }
 
@@ -1190,11 +1300,10 @@ template, [hidden] {
 .section .calendar-item-num {
   font-family: Roboto Mono;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16rem;
   line-height: 24rem;
   margin: 0;
-  margin-bottom: 12rem;
   color: #B5B5B6;
 }
 
@@ -1221,7 +1330,7 @@ template, [hidden] {
   font-style: normal;
   font-weight: bold;
   font-size: 24rem;
-  line-height: 100%;
+  line-height: 32rem;
   color: #fff;
 }
 
@@ -1381,25 +1490,41 @@ template, [hidden] {
   .section-right p {
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
   }
   .section-right p li {
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
+    margin-bottom: 0 !important;
   }
   .section-right ul {
     margin-block: 0;
     -webkit-padding-start: 20rem;
             padding-inline-start: 20rem;
+  }
+  .section-right-signal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-right-signal::after {
+    content: "";
+    width: 200%;
+    height: 90%;
+    background: white;
   }
   .section .ordered-list {
     width: auto;
@@ -1467,15 +1592,6 @@ template, [hidden] {
             justify-content: space-between;
     margin-bottom: 12rem;
   }
-  .section .calendar-item-num {
-    font-family: Roboto Mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16rem;
-    line-height: 24rem;
-    margin: 0;
-    margin-bottom: 12rem;
-  }
   .section .calendar-item-text {
     font-family: Roboto;
     font-style: normal;
@@ -1508,11 +1624,10 @@ template, [hidden] {
   .section table th {
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
     color: #B5B5B6;
   }
   .section table tr {
@@ -1532,21 +1647,19 @@ template, [hidden] {
   .section table tr td:nth-of-type(2) {
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
     color: #B5B5B6;
   }
   .section table tr td:nth-of-type(3) {
     font-family: Roboto Mono;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16rem;
     line-height: 24rem;
     margin: 0;
-    margin-bottom: 12rem;
     color: #FF9B00;
   }
 }

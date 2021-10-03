@@ -187,7 +187,7 @@
         font-style: normal
         font-weight: bold
         font-size: 24rem
-        line-height: 100% 
+        line-height: 32rem
         color: $color-white
       td:nth-of-type(2)
         font-family: Roboto Mono
@@ -233,8 +233,7 @@
       margin-top: 214rem
       width: 100%
 
-  .section
-    // position: relative
+  .section 
     width: 100%
     margin-top: 0rem
     flex-direction: column
@@ -284,10 +283,19 @@
         @include paragraph
         li 
           @include paragraph
+          margin-bottom: 0!important
       ul
         margin-block: 0
         padding-inline-start: 20rem
       &-signal
+        display: flex
+        align-items: center
+        justify-content: center 
+        &::after
+          content: ""
+          width: 200%
+          height: 90%
+          background: white
 
     .ordered-list
       width: auto
@@ -329,7 +337,7 @@
         justify-content: space-between
         margin-bottom: 12rem
         &-num
-          @include paragraph 
+          // @include paragraph 
         &-text
           @include h4
 
