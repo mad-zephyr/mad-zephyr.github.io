@@ -14,19 +14,15 @@ class CreateEl {
 
     document.querySelector(this.parent).insertAdjacentElement('beforeend', _div)
     _div.innerHTML = this.text 
-    console.log(_div)
     return _div
   }
 }
-
 
 window.addEventListener('DOMContentLoaded', () => {
   let language = 'ru'
   const { ...header } = $.lang.ru.header 
   const { ...about } = $.lang.ru.about 
 
-  console.log(about)
- 
   const headerSubtitle = new CreateEl('div', 'subtitle', '.header-name', header.greeting)
   const headerName = new CreateEl('div', 'title', '.header-name', header.name)
 
@@ -37,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const skill = new CreateEl('div', 'hashtag-items', '.hashtag', item)
   })
 
-  const aboutBlock = new CreateEl('div', 'section-right-title', '[data-content="about"]', about.title)
+  // const aboutBlock = new CreateEl('div', 'section-right-title', '[data-content="about"]', about.title)
 
   about.block.forEach(block => {
 
@@ -58,7 +54,4 @@ window.addEventListener('DOMContentLoaded', () => {
     const ulli = new CreateEl('ul', 'classes', '[data-content="about"]', `${listArr}`)
 
   })
-
-
-
 })
