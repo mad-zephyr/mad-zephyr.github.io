@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     } 
 
-    const title = new CreateEl('p', 'classes', '[data-content="about"]', text())
+    // const title = new CreateEl('p', 'classes', '[data-content="about"]', text())
     const listArr = []
     block.ulli.forEach(list => {  
       listArr.push(`<li>${list}</li>`)
